@@ -77,6 +77,9 @@ namespace CarLotSimulator
                 Console.WriteLine($"{carLot.carLot[i].Make}, {carLot.carLot[i].Model}, {carLot.carLot[i].Year}, " +
                 $" {carLot.carLot[i].IsDriveable}, {carLot.carLot[i].EngineNoise}, {carLot.carLot[i].HonkNoise}");
             }
+
+            CarLot.numberOfCars = carLot.carLot.Count;
+            Console.WriteLine(CarLot.numberOfCars);
         }
     }
 }
